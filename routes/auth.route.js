@@ -5,7 +5,7 @@ import { resultadoValidacion } from '../middlewares/validationResult.js';
 
 const router = express.Router();
 
-router.get('/login',[
+router.post('/login',[
                 body('email', 'Formato email incorrecto. 🤷‍♀️')
                     .trim()
                     .isEmail()
